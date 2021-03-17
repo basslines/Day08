@@ -1,23 +1,15 @@
 var sum = 0;
 function addThree() {
-  sum += 3;
-  if (typeof sum != "defined") {
-    console.log("undefined", sum);
-  } else {
-    console.log("error");
-  }
+  sum = sum + 3;
+  console.log(sum);
 }
 function addFive() {
-  sum += 5;
-  if (typeof sum != "defined") {
-    console.log("undefined", sum);
-  } else {
-    console.log("error");
-  }
+  sum = sum + 5;
+  console.log(sum);
 }
 
-addThree();
-addFive();
+console.log(addThree());
+console.log(addFive());
 
 module.exports = {
   addThree,
