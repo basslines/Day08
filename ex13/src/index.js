@@ -1,7 +1,6 @@
 function randomRangeNumber(minNumber, maxNumber) {
-  var random = Math.floor(Math.random() * (30 - 1 + 1)) + 1;
-  return random;
+  return Math.floor(Math.random() * (minNumber + maxNumber));
 }
-console.log(randomRangeNumber());
+console.log(randomRangeNumber(0, 20));
 
 module.exports = randomRangeNumber;
